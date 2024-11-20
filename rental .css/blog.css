@@ -1,0 +1,207 @@
+:root{
+    --pc-color: palevioletred;
+    --sc-color:#3b3b3b;
+    --light-color:#ffffff;
+}
+*{box-sizing: border-box; margin: 0px;padding: 0px;}
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;line-height: 1.7rem; color: var(--sc-color);
+  
+}
+.col{
+    text-align: center;
+    color: white;
+    padding: 200px 0px;
+}
+.col h1{
+    font-size: 60px;
+}
+.col a{
+    font-size: 20px;
+    color: white;
+}
+.bg-1{
+    background-image: url(../images/bg_2.jpg.webp);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 450px;
+    opacity:#000000 1.0;
+}
+
+.container{
+    padding: 0 16px;
+    margin: 0 auto;
+}
+.container-fluid{
+    padding: 0 16px;
+    margin: 0 auto;
+    width: 100%;
+    
+}
+.row-1{
+    display: flex; justify-content: space-around;flex-wrap: wrap;
+}
+.row-2{
+    display: flex; justify-content: space-between;flex-wrap: wrap;
+}
+.row-3{
+    display: flex; justify-content: space-evenly;flex-wrap: wrap;
+}
+h1,h2,h3,h4,h5,h6{
+    color: var();
+     margin-bottom: 1rem;
+}
+.banner h1{
+    font-size: 60px;
+    font-family:sans-serif;
+    font-weight: 800;
+    color: var(--light-color);
+}
+a{
+    text-decoration: none;
+    margin: 5px;
+    color: var(--sc-color);
+}
+ul{
+    list-style: none;
+    margin-right: 50px;
+}
+.py-1{padding: 24px 0px;}
+.py-2{padding: 30px 0px;}
+.py-3{padding: 40px 0px;}
+.py-4{padding: 180px 0px;}
+
+.px-1{padding: 0px 24px;}
+.px-2{padding: 0px 30px;}
+.px-3{padding: 0px 40px;}
+.main-nav ul a:hover{
+background-color: var(--pc-color);
+padding: 10px 15px;
+transition: 1s;
+}
+.main-nav ul a{
+    margin-left:15px;
+}
+.my_btn1{
+    background-color: var(--pc-color);
+    color: var(--light-color);
+    padding: 15px 35px;
+    border: none;
+    border-radius: 5px;
+}
+.my_btn1:hover{
+    color: var(--pc-color);
+    padding: 15px 35px;
+    border: 2px solid palevioletred;
+    border-radius: 5px;
+    background-color:transparent;
+    transition: 0.5s;
+}
+.my_btn2{
+    background-color: var(--light-color);
+    color: var(--sc-color);
+    padding: 15px 35px;
+    border: none;
+    border-radius: 5px;
+}
+.my_btn2:hover{
+    color: var(--light-color);
+    padding: 15px 35px;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 5px;
+    background-color:transparent;
+    transition: 0.5s;
+}
+
+
+/* moblie */
+@media screen and (min-width:425px) {
+    .container{width: 100%;}
+    .col-2,.col-4,.col-3{width: 100%;padding: 16px;}  
+    .main-nav{display: none;}
+    .menu-icon{display: block;}
+    .banner{font-size: 10px;}
+}
+
+/* tablet */
+@media screen and (min-width:768px) {
+        .container{width: 720px;}
+        .col-2,.col-4{width: 50%;padding: 16px;}
+        .col-3{width: 33%;padding: 16px;}
+        .main-nav{display: block;}
+        .menu-icon{display: none;}
+    
+}
+
+/* laptop */
+@media screen and (min-width:992px) {
+    .container{width: 960px;}
+    .col-4{width: 25%;padding: 16px;}
+    .col-2{width: 50%;padding: 16px;}
+    .col-3{width: 33%;padding: 16px;}
+   
+}
+
+/* Desktop */
+@media screen and (min-width:1200px) {
+    .container{width: 1140px;}
+}
+
+.my_btn3{
+    background-color: palevioletred;
+    padding: 15px 100px;
+    border: none;
+    color: white;
+    border-radius: 5px;
+}
+.card-body{
+    text-align: center;
+    
+}
+.card-body p{
+    color: black;
+}
+.cards{
+    width: 400px;
+    height: 450px;
+    box-shadow:1px 1px 1px 1px;
+    margin-top: 20px;
+}
+.aprt{
+    text-align: center;
+}
+.room-content{
+    margin-top: 80px;
+    color: black;
+}
+.room-content p{
+    color: black;
+}
+.footer{
+    background-color:var(--sc-color);
+    padding: 20px;
+}
+.footer-main input[type="email"]{
+           padding: 10px 15px;
+           border-radius: 5px;
+}
+.my_btn4{
+    color: #d64567;
+    background-color: transparent;
+    padding: 5px 10px;
+    border: none;
+}
+.card-text1{
+    color: black;
+}
+.ready{
+    text-align: center;
+    margin-left: 50px;
+   color: white;
+}
+.ready h2,p{
+    color: white;
+}
+.new{
+    text-align: center;
+}
